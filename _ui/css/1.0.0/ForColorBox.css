@@ -1,0 +1,13 @@
+#cboxOverlay { background: #AAAAAA; opacity: 0.60; filter: alpha(opacity=60); }
+
+#cboxLoadedContent { border: 5px solid #7694C8; }
+
+#cboxTitle { color: #7694C8; }
+
+#cboxPrevious { background: url(/_util_lib/colorbox/1.6.4/css/images/controls.png) no-repeat top left; }
+
+#cboxNext { background: url(/_util_lib/colorbox/1.6.4/css/images/controls.png) no-repeat top right; }
+
+#cboxClose { background: url(/_util_lib/colorbox/1.6.4/css/images/controls.png) no-repeat top center; }
+
+#cboxLoadingGraphic { background: url(/_util_lib/colorbox/1.6.4/css/images/loading.gif) no-repeat center center; }

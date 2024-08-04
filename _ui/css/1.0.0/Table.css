@@ -1,0 +1,18 @@
+/* [table-query]  */
+.table-query > tbody > tr > th { text-align: right !important; background-color: #E9E9E9 !important; border: 1px solid #FFFFFF !important; color: #4A4A4A; font-weight: normal; }
+.table-query > tbody > tr > td { background-color: #FFFFFF; border: 1px solid #FFFFFF !important; }
+
+/* multi-row data [table-list] */
+.list-th, .table-list > thead > tr > th { background-color: #E9E9E9; color: #4A4A4A; font-weight: normal; }
+
+.list-td, .table-list > tbody > tr { background-color: #FFFFFF; color: #262626; }
+
+.list-td-even, .table-list > tbody > tr:nth-of-type(even) { background-color: #FFFFFF; color: #262626; }
+
+.list-td-hover, .table-list > tbody > tr:hover { background-color: #E6ECF7; }
+
+.table-list > table input[type=button]:hover { background-color: #FFFFFF; }
+
+/* single-row data [table-detail]  */
+.table-detail > tbody > tr > th { background-color: #E9E9E9; border: 1px solid #D6D6D6 !important; text-align: right; /*width: 150px;*/ }
+.table-detail > tbody > tr > td { background-color: #FFFFFF; border: 1px solid #D6D6D6 !important; }

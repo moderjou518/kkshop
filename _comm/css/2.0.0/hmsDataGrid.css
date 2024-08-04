@@ -1,0 +1,220 @@
+/*hms ul-li data grid set*/
+.hms_style ul.dataUl,
+.hms_style ul.ul-3,
+.hms_style ul.ul-4,
+.hms_style ul.ul-1{
+    list-style:none;
+    padding:0;
+    margin:0;
+    margin-bottom:3px;
+    margin-top:0px;
+    /*line-height:40px;*/
+}
+.hms_style ul.dataUl>li{
+    box-sizing: border-box;
+    display:inline-block;
+    vertical-align:top;
+    padding-left:5px;
+    margin-bottom:0px;
+    border-radius:2px;	
+    width:40.5%;
+    border:solid 0px #CCC;    
+    padding-top:4px;
+}
+
+.hms_style ul.dataUl>li.dataTitle{
+    border:none;
+    width:8%;
+    background-color:#E9E9E9;    
+    margin-left:5px;
+    text-align:right;
+    padding-right:5px;
+    padding-left:0px;
+    padding-top:4px;
+    min-height:30px;
+}
+
+.hms_style ul.dataUl>li.fullLi{
+    width:99.1%;
+    border:none;
+    /*text-align:center;*/
+    
+}
+.hms_style ul.dataUl>li.halfLi{
+    width:49%;
+    border:none;    
+    /*text-align:center;*/
+    
+}
+.hms_style ul.ul-0>li{
+    /*width:23%;*/
+    width:99.5%;
+}
+.hms_style ul.ul-0>li.dataTitle{
+    width:50%;   
+}
+.hms_style ul.ul-1>li{
+    /*width:23%;*/
+    width:90.5%;
+}
+.hms_style ul.ul-1>li.dataTitle{
+    width:8%;   
+}
+.hms_style ul.ul-3>li{
+    /*width:23%;*/
+    width:calc(71%/3);
+}
+.hms_style ul.ul-3>li.dataTitle{
+    width:8.5%;   
+}
+.hms_style ul.ul-4>li{
+    width:calc(63%/4);    
+}
+.hms_style ul.ul-4>li.dataTitle{
+    width:8%;   
+}
+.hms_style ul.ul-5>li{
+    font-size:0.9em;
+    width:calc(63.5%/5);
+}
+.hms_style ul.ul-5>li.dataTitle{
+    font-size:0.9em;
+    width:6%;   
+}
+/* IE10+ specific styles go here */
+/*@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none){*/
+/*@supports not (display: flex){
+    body{
+        background-color:orange !important;
+    }
+}
+@supports (display:flex){*/
+   .hms_style ul.dataUl{	    
+	    /*flex*/
+	    display:flex;
+	    flex-wrap: wrap;
+	    align-items:flex-start;
+	}
+	.hms_style ul.blockUl{
+	    display:flex;
+        flex-wrap: wrap;
+	    justify-content:space-between;
+	}
+	.hms_style ul.dataUl.notGrow li{
+        flex-grow:0;
+    }
+	.hms_style ul.dataUl>li{
+	    margin-bottom:4px;
+	    margin-left:3px;
+	    border:solid 0px #CCC;
+	    flex-grow:2;
+	    flex-basis:90%;
+	    align-content:flex-start;
+	}
+	
+	.hms_style ul.dataUl>li.dataTitle{
+	    /*height:35px;*/
+	    flex-grow:0;
+	    flex-basis:8%;  
+	}
+	.hms_style ul.ul-0>li.dataTitle{
+        flex-basis:50%;
+        text-align:left;
+        padding-left:10px;
+    }
+	.hms_style ul.ul-0>li{
+        flex-basis:99%;
+    }
+	.hms_style ul.ul-2>li{
+	    flex-basis:38%;
+	}
+	.hms_style ul.ul-3>li{
+	    flex-basis:23%;
+	}
+	.hms_style ul.ul-4>li{
+	    flex-basis:14.5%;
+	    flex-basis:10%;
+	}
+	@media screen and (max-width: 1200px) {
+	    .hms_style ul.ul-4>li{
+	        flex-basis:13%;
+	        flex-basis:10%;
+	    }   
+	}
+	.hms_style ul.ul-5>li.dataTitle{
+	    flex-basis:6%;
+	}
+	.hms_style ul.ul-5>li{
+	    flex-basis:11.7%;
+	    flex-basis:10%;
+	}
+	
+	
+	.hms_style ul.dataUl>li.fullLi{
+	   padding-left:0px;
+	   flex-basis:99%;
+	}
+	.hms_style ul.dataUl>li.halfLi{
+	    flex-basis:49%;
+	    flex-grow:0;
+	    padding-left:0px;	    
+	}
+	.hms_style ul.noGrow li{
+	   flex-grow:0;
+	}
+	.hms_style ul.dataUl>li[class^=blockLi-]{
+	   flex-grow:0;
+	   padding-left:0px;
+	   margin:0px;	   
+	}
+	/**用li排12網格**/
+	.hms_style ul.dataUl>li.blockLi-1{
+	    flex-basis:calc(99%*1/12);
+	}
+	.hms_style ul.dataUl>li.blockLi-2{
+        flex-basis:calc(99%*2/12);
+    }
+    .hms_style ul.dataUl>li.blockLi-3{
+        flex-basis:calc(99%*3/12);
+    }
+    .hms_style ul.dataUl>li.blockLi-4{
+        flex-basis:calc(99%*4/12);
+    }
+    .hms_style ul.dataUl>li.blockLi-5{
+        flex-basis:calc(99%*5/12);
+    }
+    .hms_style ul.dataUl>li.blockLi-6{
+        flex-basis:calc(99%*6/12);
+    }
+    .hms_style ul.dataUl>li.blockLi-7{
+        flex-basis:calc(99%*7/12);
+    }
+    .hms_style ul.dataUl>li.blockLi-8{
+        flex-basis:calc(99%*8/12);
+    }
+    .hms_style ul.dataUl>li.blockLi-9{
+        flex-basis:calc(99%*9/12);
+    }
+    .hms_style ul.dataUl>li.blockLi-10{
+        flex-basis:calc(99%*10/12);
+    }
+    .hms_style ul.dataUl>li.blockLi-11{
+        flex-basis:calc(99%*11/12);
+    }
+    .hms_style ul.dataUl>li.blockLi-12{
+        flex-basis:calc(99%*12/12);
+    }
+    /*若用12網格後，原ul li結構的大小修改*/
+    .hms_style .ul-block ul.dataUl>li{
+       flex-basis:80%;
+    } 
+    .hms_style .ul-block ul.dataUl>li.dataTitle{
+       flex-basis:14%;
+    }
+    .hms_style .ul-block ul.ul-2>li{
+       flex-basis:30%;
+    }
+    .hms_style .ul-block ul.ul-3>li{
+       flex-basis:15%;
+    } 
+/*}*/

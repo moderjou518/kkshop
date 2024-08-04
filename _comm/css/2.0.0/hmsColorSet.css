@@ -1,0 +1,96 @@
+/*網頁底色*/
+body.hms_style{
+    color:#333;
+}
+.body-plus-default.hms_style{
+	background-color:rgba(220, 244, 241, 1);
+    background-image:url(/comm/images/hms2_bg1.png);    
+}
+/*card底色*/
+.hms_style .card-plus{
+	/*background-color:#fdf4bf;*/
+}
+/*上方工具列*/
+.hms_style .toolBar{
+    background-color:#fbdc7e;
+}
+/*fieldset底色*/
+.hms_style fieldset.blockFieldset{
+    background-color:#f9f7ec;
+}
+/*彈出視窗(modal)底色*/
+.hms_style .hms_modal-body{
+    background-color:#f9f7ec;
+}
+
+/*資列組title/標題顏色*/
+.hms_style ul.dataUl>li.dataTitle{
+    background-color:#f9f1c8;
+}
+/*table排版 標題顏色*/
+.hms_style .table-plus th{
+	background-color:#f9f1c8;
+}
+/*奇偶行變色*/
+.hms_style .table-list-td tr,.hms_style  :not([data-evg-grid-bg-manual]).table-list > tbody > tr:nth-child(2n+1){
+	background-color:rgba(219, 250, 227, 1);
+}
+/*滑鼠移入行數變色*/
+.hms_style .table-list-td tr.hover,.hms_style .table-list:not([data-evg-grid-bg-manual]) > tbody > tr:hover{
+	background-color:#a4e6e3 !important;
+	background-color:#abefeb !important;
+}
+
+/*hms 包含展開細項目的奇偶行變色*/
+.hms_style :not([data-evg-grid-bg-manual]).table-list.subDataTable > tbody > tr:nth-child(4n+1),
+.hms_style :not([data-evg-grid-bg-manual]).table-list.subDataTable > tbody > tr:nth-child(4n+2){
+	background-color:rgba(219, 250, 227, 1);
+	background-color:rgba(229, 252, 227, 1);
+}
+:not([data-evg-grid-bg-manual]).table-list.subDataTable > tbody > tr:nth-child(4n+3),
+:not([data-evg-grid-bg-manual]).table-list.subDataTable > tbody > tr:nth-child(4n+4){
+    background-color:#FFFFFF;
+}
+
+/*plus navBar style*/
+.hms_style .navbar-plus{
+    /*background-color:pink;*/
+    background-color:#28b5ba;
+}
+
+.hms_style .navbar-plus a:not(.navbar-nav){
+	/*color:#444;*/	
+}
+.hms_style .navbar-plus a:not(.navbar-brand):hover{
+	background-color:rgba(0, 0, 0, 0.08);	
+}
+.navbar-plus a.navbar-brand:hover,
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+	color:#FFF;
+}
+
+/*detail form(collapse) left border color*/
+.hms_style .detail-form{
+	border-left-color:rgba(41, 163, 45, 1);
+}
+
+.hms_style .sameDetailForm{
+	border-left:solid 3px rgba(41, 163, 45, 1) !important;
+}
+
+/**/
+.hms_style .card{
+	background-color:#f9f7ec;
+}
+
+.hms_style .card-default > .card-title{
+	background-color:#f9f7ec;
+}
+
+.hms_style .card-footer{
+	background-color:#f9f7ec;	
+}
+
+.hms_style .modal-content{
+	background-color:#f9f7ec;
+}
