@@ -23,7 +23,6 @@ function pageLoad(){
 	$.ajax({
     	url: evg.util.fn.toActionWithTabKey('HBD1W010_ACTION'),
 		data:{			
-			//tabKey: myTabKey,
 			actionMethod: 'jr',
 			methodName: 'LOAD_BID_LIST'					
 		},
@@ -35,7 +34,6 @@ function pageLoad(){
         if(result.success) {                       
         	
             template_obj = Handlebars.compile($('#hbt_bidList').html());
-            //rendered = template_obj(result);
             $("#" + mastTblID + " tbody").replaceWith(template_obj(result));
             
             if(result.data.BIDLIST.length == 0){
@@ -159,7 +157,7 @@ var formEvent = {
 		var trObj = $(btnPlus).parent().parent();		
 		var txtQty = $(trObj).find("input[name=txtPoddQty]");
 		var qty = parseInt($(txtQty).val());
-		if (qty < 99){
+		if (qty < 1000){
 			$(txtQty).val(qty+1);	
 			$(txtQty).addClass("text-danger").addClass("font-weight-bold");
 		}
@@ -205,24 +203,8 @@ var formEvent = {
 		$("#divBidItemList").find('table').each(function (i, el) {			
 			dayAry[i]	= $(el).attr("data-order-date");
 			dataAry[i] 	= evg.util.form.toString($(el));
-		});
+		});		
 		
-		
-		
-		/*
-		$("#divBidItemList").find('table').each(function (i, el) {			
-			console.log('ord Date: ' + $(el).attr("data-order-date"));
-		});
-		*/
-		
-		//console.log('dayAry: ' + dayAry.toString());
-		//console.log('dataAry: ' + dataAry.toString());
-		
-		
-		
-		//console.log('010 ajax : !!!bidItem2CartItem');
-		//console.log('010 dayInfo :' + dayAry.toString());
-		//console.log('010 dataInfo :' + dataAry.toString());
 		
 		/* 將訂購的物料轉到購物車(want list)中 */
 		$.ajax({
@@ -238,8 +220,6 @@ var formEvent = {
 			type: 'post',
 			dataType: 'json'
 		}).done(function(result) {
-			//console.log('done:' + result);
-			//console.log(result);
 			
 			if(result.success) {				
 				
@@ -272,8 +252,7 @@ var formEvent = {
 			}else{
 				evg.util.fn.showError("ITEM TO CART 失敗!");
 			}                
-		});        	
-    	
+		});       	    	
     	
     	return;
     	
@@ -282,9 +261,7 @@ var formEvent = {
     
     showLogin: function(){   	   
     	
-    	console.log('showLogin ..');
-    	
-    	
+    	console.log('showLogin ..');   	    	
     	
     	$.ajax({
         	url: evg.util.fn.toActionWithTabKey('HBD1LOGIN_ACTION'),
@@ -297,16 +274,11 @@ var formEvent = {
             dataType: 'json'
         }).done(function(result) {            
         	
-        	console.log('result: ');
-        	console.log(result);
-            
             if(result.success) {            	            	
             	$("#txtLoginID").val(result.data.hasc0BascLoginId);                
             }else{
             	$("#txtLoginID").val('');            	
-            }
-            
-            //$('#loginModal').modal('show');
+            }           
             
         });
     	
