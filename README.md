@@ -1,5 +1,3 @@
 # kkshop
 
-test
-
-test commit
+呆呆燒雞預訂系統
