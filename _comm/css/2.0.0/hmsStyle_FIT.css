@@ -1,7 +1,0 @@
-/*覆蓋PLUS FIT.CSS*/
-
-.hms_style .hint:hover::after{
-    font-size:1rem;
-    padding:0.3rem 0.5rem;
-    min-width:15rem;
-}
